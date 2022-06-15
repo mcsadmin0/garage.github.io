@@ -312,10 +312,14 @@ section .section-inner h2 {
 .form-container {
     display: flex;
     justify-content: center;
-    background: url("../img/pier-60-at-sunset.jpg") no-repeat center;
+    background: url("../img/pier-60-at-sunset.jpg") no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+
     position: relative;
-    min-height: 400px;
+    min-height: 870px;
     padding: 24px;
 }
 
