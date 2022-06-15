@@ -17,6 +17,7 @@ li,
     background: #b2a37d !important;
 }
 
+
 .brand {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn;
@@ -170,7 +171,7 @@ section .section-inner h2 {
     }
 }
 
-.mce-success-response {}
+
 
 .nav-pills.nav-pills-just-icons .nav-item .nav-link {
     text-align: center;
@@ -386,3 +387,14 @@ label {
      background-color: #007bff;
    }
  */
+.comments {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.carousel {
+    margin: auto;
+    width: 800px;
+    height: auto;
+}
