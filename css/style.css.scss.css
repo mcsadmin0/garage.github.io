@@ -287,7 +287,13 @@ section .section-inner h2 {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
 }
+
+
+
+
 
 .photo-container {
     border: 1px solid #b2a37d;
