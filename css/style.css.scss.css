@@ -157,13 +157,54 @@ section .section-inner h2 {
 
 
 .thanks .wrapper {
-    height: 100vh;
-    width: 100%;
+
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: auto;
+    min-height: 594px;
+    padding: 24px;
+
+
 }
+
+
+
+
+
+
+#bg-wrap {
+    background-image: url('img/Attachment-1-copy.png') center center fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    overflow: hidden;
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 500px) {
     .brand .h1-seo {
