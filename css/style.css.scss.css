@@ -449,3 +449,8 @@ label {
     width: 800px;
     height: auto;
 }
+
+#demo {
+    font-family: digit;
+    font-size: 35px;
+}
