@@ -20,33 +20,31 @@
 
 <head>
   <!-- Required meta tags -->
-  <meta charset="utf-8">
+  <meta charset="utf-8" />
   <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.png" />
   <link rel="icon" type="image/png" href="img/kitg-logo.png" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes" />
   <meta name="author" content="Andrew C. Kerstetter" />
-  <title>KITG</title>
+  <title>Report</title>
   <meta name="language" content="en-us" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-
-
-
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
   <!--     Fonts and icons     -->
   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
-
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/brands.min.css"
+    integrity="sha512-+oRH6u1nDGSm3hH8poU85YFIVTdSnS2f+texdPGrURaJh8hzmhMiZrQth6l56P4ZQmxeZzd2DqVEMqQoJ8J89A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- Bootstrap core CSS     -->
   <link rel="stylesheet"
-    href="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/css/bootstrap.min.css">
+    href="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/css/bootstrap.min.css" />
   <link
     href="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/css/now-ui-kit.min.css?v1.2.0"
     rel="stylesheet" />
-  <link
-    href="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/demo/demo.css"
-    rel="stylesheet">
-  <!-- CSS Your own CSS Links and Stylesheet-->
-  <link rel="stylesheet" href="css/style.css.scss.css">
 
+  <!-- CSS Your own CSS Links and Stylesheet-->
+  <link rel="stylesheet" href="css/style.css" />
   <style>
     .navbar .navbar-nav .nav-link:not(.btn) i.fa {
       font-size: 18px;
@@ -61,53 +59,75 @@
       src: url(font/digital-7.ttf)format('truetype');
     }
   </style>
-
 </head>
 
 <body class="index-page sidebar-collapse">
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent " color-on-scroll="200">
+  <nav class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent navbar-color-on-scroll"
+    color-on-scroll="200">
     <div class="container">
-
       <div class="navbar-translate">
-        <a class="navbar-brand" rel="tooltip" title="Add a beautiful tooltip here" data-placement="bottom"
-          target="_blank">
-          <!--<img src="img/kitg-logo.png" alt="Kitg logo"> -->
-        </a>
+
+        <!-- <a href='javascript:void(0);' class="navbar-brand" rel="tooltip" title="Add a beautiful tooltip here"
+          data-placement="bottom" target="_blank"><img src="img/kitg-logo.png" alt="Kitg logo"></a> -->
         <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation"
           aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-bar bar1"></span>
-          <span class="navbar-toggler-bar bar2"></span>
-          <span class="navbar-toggler-bar bar3"></span>
+          <span class="navbar-toggler-bar top-bar"></span>
+          <span class="navbar-toggler-bar middle-bar"></span>
+          <span class="navbar-toggler-bar bottom-bar"></span>
         </button>
       </div>
-      <div class="collapse navbar-collapse justify-content-end" data-nav-image="img/blurred-image-1.jpg">
+      <div class="collapse navbar-collapse justify-content-end" id="navigation"
+        data-nav-image="./assets/img/blurred-image-1.jpg">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link" href="profile.html">About Me</a>
+            <a class="nav-link" href="javascript:void(0)" onclick="scrollToDownload()">
+              <i class="now-ui-icons arrows-1_cloud-download-93"></i>
+              <p>Launch Date</p>
+            </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="problem.html">Have an
-              Issue?</a>
+          <li class="nav-item dropdown">
+            <a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink1" data-toggle="dropdown">
+              <i class="now-ui-icons design_app"></i>
+              <p>Components</p>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink1">
+              <a class="dropdown-item" href="./index.html">
+                <i class="now-ui-icons business_chart-pie-36"></i>Home
+              </a>
+              <a class="dropdown-item" target="_blank" href="./profile">
+                <i class="now-ui-icons design_bullet-list-67"></i>About Me
+              </a>
+              <a class="dropdown-item" target="_blank" href="./problem.html">
+                <i class="now-ui-icons design_bullet-list-67"></i> Have An Issue
+              </a>
+              <a class="dropdown-item" target="_blank" href="./thanks.html">
+                <i class="now-ui-icons design_bullet-list-67"></i> Thanks
+              </a>
+              <a class="dropdown-item" target="_blank" href="">
+                <i class="now-ui-icons design_bullet-list-67"></i> Documentation
+              </a>
+            </div>
           </li>
+
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom"
               href="https://twitter.com" target="_blank">
-              <i class="fa fa-twitter"></i>
+              <i class="fab fa-twitter"></i>
               <p class="d-lg-none d-xl-none">Twitter</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom"
               href="https://www.facebook.com" target="_blank">
-              <i class="fa fa-facebook-square"></i>
+              <i class="fab fa-facebook-square"></i>
               <p class="d-lg-none d-xl-none">Facebook</p>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom"
               href="https://www.instagram.com" target="_blank">
-              <i class="fa fa-instagram"></i>
+              <i class="fab fa-instagram"></i>
               <p class="d-lg-none d-xl-none">Instagram</p>
             </a>
           </li>
@@ -197,7 +217,7 @@
       </section>
       <div class="section section-team text-center cto">
         <div class="container black">
-          <!-- <h2 class="title">A word from our CTO</h2> -->
+          <h2 class="title gold">A word from our CTO</h2>
           <div class="">
             <div class="team">
               <div class="row">
@@ -255,42 +275,42 @@
 
       <!-- Begin Mailchimp Signup Form -->
 
-      <div id="mailchimp">
+      <div id="mailchimp" class="section section-dowmload">
         <form action="https://gmail.us11.list-manage.com/subscribe/post?u=4711c6667bd6f579bc29dbeaa&amp;id=b194c1990a"
-          class="section section-contact-us text-center" method="post" id="mc-embedded-subscribe-form"
+          class=" section-contact-us text-center" method="post" id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
           <div class="container">
             <h2 class="title">Want To Know When We Launch?</h2>
             <p id="demo"></p>
             <script>
               // Set the date we're counting down to
-              var countDownDate = new Date("Aug 2, 2022 15:00:00").getTime();
+              var countDownDate=new Date("Aug 2, 2023 15:00:00").getTime();
 
               // Update the count down every 1 second
-              var x = setInterval(function () {
+              var x=setInterval(function() {
 
                 // Get today's date and time
-                var now = new Date().getTime();
+                var now=new Date().getTime();
 
                 // Find the distance between now and the count down date
-                var distance = countDownDate - now;
+                var distance=countDownDate-now;
 
                 // Time calculations for days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                var days=Math.floor(distance/(1000*60*60*24));
+                var hours=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+                var minutes=Math.floor((distance%(1000*60*60))/(1000*60));
+                var seconds=Math.floor((distance%(1000*60))/1000);
 
                 // Output the result in an element with id="demo"
-                document.getElementById("demo").innerHTML = days + "d " + hours + "h "
-                  + minutes + "m " + seconds + "s ";
+                document.getElementById("demo").innerHTML=days+"d "+hours+"h "
+                  +minutes+"m "+seconds+"s ";
 
                 // If the count down is over, write some text
-                if (distance < 0) {
+                if(distance<0) {
                   clearInterval(x);
-                  document.getElementById("demo").innerHTML = "EXPIRED";
+                  document.getElementById("demo").innerHTML="EXPIRED";
                 }
-              }, 1000);
+              },1000);
             </script>
 
 
@@ -388,41 +408,50 @@
           , Developed by
           <a class="gold" href="" target="_blank">AK Design Studios LLC</a>.
         </div>
-    </footer>
-        </div>
+      </footer>
+    </div>
   </div>
+  <!--   Core JS Files   -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/core/jquery.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/core/popper.min.js"></script>
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/core/bootstrap.min.js"></script>
+  <!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/plugins/bootstrap-switch.js"></script>
+  <!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/plugins/nouislider.min.js"></script>
+  <!-- Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/plugins/bootstrap-datepicker.js"></script>
+  <!--  Google Maps Plugin    -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script>
+  <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
+  <script
+    src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/now-ui-kit.js"></script>
+  <script>
+    $(document).ready(function() {
+      // the body of this function is in assets/js/now-ui-kit.js
+      nowuiKit.initSliders();
+    });
 
+    function scrollToDownload () {
 
+      if($('.section-download').length!=0) {
+        $("html, body").animate({
+          scrollTop: $('.section-download').offset().top
+        },1000);
+      }
+    }
+  </script>
 </body>
 
-<!--   Core JS Files   -->
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/core/jquery.min.js">
-  </script>
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/core/popper.min.js">
-  </script>
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/core/bootstrap.min.js">
-  </script>
 
 
 
-<!--  Plugin for Switches, full documentation here: http://www.jque.re/plugins/version3/bootstrap.switch/ -->
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/plugins/bootstrap-switch.js">
-  </script>
-<!--  Plugin for the Sliders, full documentation here: http://refreshless.com/nouislider/ -->
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/plugins/nouislider.min.js">
-  </script>
-<!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/plugins/bootstrap-datepicker.js">
-  </script>
-<!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-<script
-  src="https://cdn.jsdelivr.net/gh/creativetimofficial/now-ui-kit@2e8e665fcb1a95f16e3eb1d51c8fca8266f2ecae/assets/js/now-ui-kit.js">
-  </script>
+
 
 </html>

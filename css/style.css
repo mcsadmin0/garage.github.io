@@ -1,3 +1,13 @@
+body,
+html {
+    height: 100%;
+    font-size: 16px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 p,
 li,
 .description {
@@ -153,8 +163,30 @@ section .section-inner h2 {
 .footer {
     background: #131313;
     color: #b2a37d;
+    bottom: ;
+    position: fixed;
+    width: 100%;
+    justify-content: left;
+    align-items: stretch;
+    font-size: 14px;
 }
 
+.footer a {
+    justify-content: left;
+    text-align: left;
+}
+
+.footer a:hover {
+    text-decoration: none;
+}
+
+.footer a:visited {
+    color: #b2a37d;
+}
+
+.footer a:hover {
+    align-content: space-around;
+}
 
 .thanks .wrapper {
 
@@ -180,9 +212,6 @@ section .section-inner h2 {
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
     background-size: cover;
     overflow: hidden;
 
@@ -206,11 +235,6 @@ section .section-inner h2 {
 
 
 
-@media screen and (max-width: 500px) {
-    .brand .h1-seo {
-        font-size: 2.2rem;
-    }
-}
 
 
 
@@ -351,28 +375,70 @@ section .section-inner h2 {
 
 
 
-* {
-    box-sizing: border-box;
-    font-family: sans-serif;
+
+
+.bg-img {
+    /* The image used */
+    background-image: url("/img/pier-60-at-sunset.jpg");
+
+    /* Control the height of the image */
+    min-height: 550px;
+
+    /* Center and scale the image nicely */
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+/* Add styles to the form container */
+.Xcontainer {
+    position: absolute;
+    left: 0;
+    margin: 20px;
+    max-width: 300px;
+    padding: 16px;
+    background-color: white;
+}
+
+.XXcontainer {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .form-container {
     display: flex;
     justify-content: center;
-    background: url("../img/pier-60-at-sunset.jpg") no-repeat center center fixed;
+
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-
+    -o-object-fit: cover;
+    object-fit: cover;
     position: relative;
-    min-height: 890px;
-    padding: 24px;
+
+
+}
+
+#report {
+    position: relative;
+    display: block;
+    right: -10%;
+    left;
+    width: 100%;
+    height: 100%;
+
+    z-index: 1;
 }
 
 #form-report {
     background-color: #fff;
-    padding: 16px;
+    padding-top: 30px;
 }
 
 .form-header {
@@ -385,10 +451,19 @@ section .section-inner h2 {
 
 .input-group-text {
     background-color: transparent;
+    font-weight: bolder;
+    color: #f8f9fa;
+}
+
+.textarea {
+    font-weight: bolder;
+    color: #f8f9fa;
 }
 
 .form-group {
     margin-top: 0em;
+    font-weight: bolder;
+    color: #f8f9fa;
 }
 
 label {
@@ -397,20 +472,20 @@ label {
 }
 
 /* .form-control {
-     display: block;
-     width: 100%;
-     padding: .375rem .75rem;
-     font-size: 1rem;
-     font-weight: 400;
-     line-height: 1.5;
-     color: #495057;
-     background-color: #f1f1f1;
-     background-clip: padding-box;
-     border: 1px solid #ced4da;
-     border-radius: .25rem;
-   }
-  */
-.form-text {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #f1f1f1;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+} */
+
+*/ .form-text {
     color: #6c757d;
     display: block;
     margin-top: .25rem;
@@ -453,4 +528,10 @@ label {
 #demo {
     font-family: digit;
     font-size: 35px;
+}
+
+@media screen and (max-width: 500px) {
+    .brand .h1-seo {
+        font-size: 2.2rem;
+    }
 }
